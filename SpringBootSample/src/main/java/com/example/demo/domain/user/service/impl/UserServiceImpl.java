@@ -29,9 +29,13 @@ public class UserServiceImpl implements UserService {
 	/** ユーザー取得 */
 	@Override
 	public List<MUser> getUsers() {
-		// TODO 自動生成されたメソッド・スタブ
 		return mapper.findMany();
 	}
-	
+
+	/** ユーザー取得 */
+	@Override
+	public MUser getUserOne(String userId) {
+		return mapper.findOne(userId);
+	}
 
 }
