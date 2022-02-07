@@ -1,5 +1,7 @@
 package com.example.demo.domain.user.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,5 +25,13 @@ public class UserServiceImpl implements UserService {
 		//TODO トランザクション制御は？
 		mapper.insertOne(user);
 	}
+
+	/** ユーザー取得 */
+	@Override
+	public List<MUser> getUsers() {
+		// TODO 自動生成されたメソッド・スタブ
+		return mapper.findMany();
+	}
+	
 
 }
