@@ -1,6 +1,7 @@
 package com.example.demo.form;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
@@ -8,6 +9,7 @@ import javax.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.Length;
 
 import com.example.demo.domain.user.model.Department;
+import com.example.demo.domain.user.model.Salary;
 
 import lombok.Data;
 
@@ -26,4 +28,5 @@ public class UserDetailForm {
     private Integer age;
     private Integer gender;
     private Department department;
+    private List<Salary> salaryList;
 }
