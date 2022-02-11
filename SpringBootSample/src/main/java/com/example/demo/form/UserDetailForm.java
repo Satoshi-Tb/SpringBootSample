@@ -7,6 +7,8 @@ import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
 
+import com.example.demo.domain.user.model.Department;
+
 import lombok.Data;
 
 @Data
@@ -23,4 +25,5 @@ public class UserDetailForm {
     private Date birthday;
     private Integer age;
     private Integer gender;
+    private Department department;
 }
