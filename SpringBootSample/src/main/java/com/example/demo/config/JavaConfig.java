@@ -14,6 +14,7 @@ public class JavaConfig {
 		return new ModelMapper();
 	}
 	
+	// 循環依存回避のため、SecurityConfigから移動
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();

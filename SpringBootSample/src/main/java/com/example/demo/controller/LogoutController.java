@@ -9,8 +9,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class LogoutController {
 
-	@PostMapping("/logout")
-	public String postLogout() {
-		return "redirect:/login";
-	}
+	// Spring Securityによってログアウト処理が実施されるため、本コントローラは不要になる。
+//	@PostMapping("/logout")
+//	public String postLogout() {
+//		return "redirect:/login";
+//	}
 }
