@@ -38,4 +38,7 @@
   SecurityConfig  
     
   \[対応]  
-　　PasswordEncoderをJavaConfigクラスに移動。
+  PasswordEncoderをJavaConfigクラスに移動。
+
+## 12章
+
