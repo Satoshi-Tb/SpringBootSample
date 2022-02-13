@@ -29,13 +29,13 @@
 * 分離レベルの説明があるのが良い。
 
 ## 11章
-* サンプルコードのままでは、循環依存が発生したため、一部コードを修正。
-  \[循環依存内容]
-  UserDetailServiceImple
-  ↓
-  UserServiceImple
-  ↓
-  SecurityConfig
-  
-  \[対応]
+* サンプルコードのままでは、循環依存が発生したため、一部コードを修正。  
+  \[循環依存内容]  
+  UserDetailServiceImple  
+  ↓  
+  UserServiceImple  
+  ↓  
+  SecurityConfig  
+    
+  \[対応]  
 　　PasswordEncoderをJavaConfigクラスに移動。
